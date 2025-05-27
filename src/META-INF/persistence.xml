@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="GMSPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelo.Membresia</class>
+    <class>modelo.Clientes</class>
+    <class>modelo.TareaMantenimientoAdministrador</class>
+    <class>modelo.Entrenador</class>
+    <class>modelo.Pagoadministrador</class>
+    <class>modelo.Asistencia</class>
+    <class>modelo.Pagoentrenador</class>
+    <class>modelo.Asistenciaentrenador</class>
+    <class>modelo.Administrador</class>
+    <class>modelo.Especialidades</class>
+    <class>modelo.Horario</class>
+    <class>modelo.Pagomembresia</class>
+    <class>modelo.TareaMantenimientoEntrenador</class>
+    <class>modelo.Compras</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gym?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
